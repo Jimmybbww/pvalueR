@@ -1,0 +1,16 @@
+Package: pvalueR
+Title: Calculate P-Values from Effect Size and Standard Error
+Version: 0.1.0
+Authors@R: 
+    person("Jimmy", "Chi-Fung", , "jimmy@example.com", role = c("aut", "cre"))
+Description: A simple and efficient tool for calculating p-values based on 
+    effect size, standard error, and sample size. This package provides 
+    functions for statistical inference in research contexts.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
