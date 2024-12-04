@@ -14,6 +14,7 @@
 #' # Calculate p-value for a small effect
 #' calculate_pvalue(effect_size = 0.2, se = 0.15, n = 50)
 #' @export
+#' @importFrom stats pt
 calculate_pvalue <- function(effect_size, se, n) {
   # Input validation
   if (!is.numeric(effect_size) || !is.numeric(se) || !is.numeric(n)) {
