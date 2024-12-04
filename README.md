@@ -1,1 +1,46 @@
-IyBwdmFsdWVSCgojIyDnsKHku4sK6YCZ5YCLIFIg5a+r5Lu25L+d5L6G5LiA5YCL566A5Y2V5LiU5pyJ5pWI55qE5Ye95pWw77yM55So5pa85pW45ryP5YiG5p6Q5Lit55qEIHAtdmFsdWXjgILlroPnibnliKvpganlkIjpnIDopoHln7rkuo7mlYjmnpDph4/vvIhlZmZlY3Qgc2l6Ze+8ieOAgeasoeWvueiqnu+8iHN0YW5kYXJkIGVycm9y77yJ5ZKM5qiZ5pW45pWw77yIc2FtcGxlIHNpemXvvInkvobov5vooYzntL/orqHmjqjorrDnmoTnoJTnqbbloKXmnZDjgIIKCiMjIOWuieijhQrmgqjlj6/ku6Xkvb/nlKjku6XkuIvmjIfku6Xlr7nlupTmraTlpITku7vigJPigJMKCmBgYHIKIyDlvpfoh6ggR2l0SHViIOWuieijhQpkZXZ0b29sczo6aW5zdGFsbF9naXRodWIoIkppbW15YmJ3dy9wdmFsdWVSIikKYGBgCgojIyDkvb/nlKjmlrnms5UKYGBgcgpsaWJyYXJ5KHB2YWx1ZVIpCgojIOWfuuacrOeVmeiogApyZXN1bHQgPC0gY2FsY3VsYXRlX3B2YWx1ZSgKICBlZmZlY3Rfc2l6ZSA9IDAuNSwgICMg5pWI5p6Q6YePCiAgc2UgPSAwLjEsICAgICAgICAgICAjIOasoOWvueiqngogIG4gPSAxMDAgICAgICAgICAgICAgIyDmqJnmlbjmlbAKKQoKcHJpbnQocmVzdWx0KQpgYGAKCiMjIOWHveaVsOWPguaVtOiyt+aehAotIGBlZmZlY3Rfc2l6ZWA6IOaViOaekOmHj++8iOaVuOWAvO+8iQotIGBzZWA6IOasoOWvueiqnu+8iOato+aVuO+8iQotIGBuYDog5qiZ5pW45pWw77yI5pW45pWw77yM5YWzIDLvvIkKCiMjIOazqOaEj+S6iwot5omA5pyJ5Y+C5pWw6YO95b+F6aCI5piv5pW45pWw5Z6L5oCnCi3mrKDlr7noprrlt7HlvpfluKYgMAot5qiZ5pW45pWw5b+F6aCI6Ie65L2NIDIKLeeUqOaTjeWFpemChOaqouWumueahCBwLXZhbHVlCgojIyDplovnmbzllY/kv6EK5q2j5bi46YG15Y+W5bu66Kit5ZKM5pS55L2c5oSP6KeB44CC5aaC5p6c5oKo55m85YWl5Lu75L2V5ZWP6aGM5oiW5pyJ5Yqf6IO95pS55L2c55qE5bu66Kit77yM6KuL5o+Q5Ye6IElzc3VlIOaIliBQdWxsIFJlcXVlc3TjgIIKCiMjIOizh+WKm+iGreiuu+iogArni7Poup7ku6XkuIvotqPmhI/ogIXnmoTmlK/mjK/vvJoKLS7kvaDnmoTlkI3lrZfvvJrpgYfmj5DmiJblhYPntI3mraTlsI/mqKHmoLzlpI3nmoTphY3nva4=
+# pvalueR
+
+## 簡介
+這個 R 套件提供了一個簡單且有效的函數，用於計算統計分析中的 p-value。它特別適合需要基於效果量（effect size）、標準誤（standard error）和樣本數（sample size）來進行統計推論的研究場景。
+
+## 安裝
+您可以使用以下指令安裝此套件：
+
+```r
+# 從 GitHub 安裝
+devtools::install_github("Jimmybbww/pvalueR")
+```
+
+## 使用方法
+```r
+library(pvalueR)
+
+# 基本範例
+result <- calculate_pvalue(
+  effect_size = 0.5,  # 效果量
+  se = 0.1,          # 標準誤
+  n = 100            # 樣本數
+)
+
+print(result)
+```
+
+## 函數參數說明
+- `effect_size`: 效果量（數值）
+- `se`: 標準誤（正數）
+- `n`: 樣本數（整數，>= 2）
+
+## 注意事項
+- 所有參數都必須是數值型態
+- 標準誤必須大於 0
+- 樣本數必須至少為 2
+- 函數返回雙尾檢定的 p-value
+
+## 開發相關
+歡迎提供建議和改進意見。如果您發現任何問題或有功能改進的建議，請提出 Issue 或 Pull Request。
+
+## 贊助支持
+如果您覺得這個套件對您的研究有幫助，可以考慮支持我們的開發：
+- 在 GitHub 上給予專案一個星星 ⭐
+- 分享這個套件給其他研究者
+- 提供功能改進建議或程式碼貢獻
